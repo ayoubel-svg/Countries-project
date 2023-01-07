@@ -3,7 +3,7 @@ import "../App.css";
 import { FaSearch } from "react-icons/fa";
 import Country from "./Country";
 import { nanoid } from "nanoid";
-import { Link } from "react-router-dom";
+
 export default function App(props) {
   const [myData, setMyData] = useState([]);
   const [country, setCountry] = useState("");
@@ -58,9 +58,7 @@ export default function App(props) {
       <div className="container">
         <div className="search-space">
           <div className="search-container" style={input_styles}>
-            <Link to="/">
-              <FaSearch className="search-logo" />
-            </Link>
+            <FaSearch className="search-logo" />
             <input
               onChange={handleCountryName}
               type="text"

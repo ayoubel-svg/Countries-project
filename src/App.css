@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 ::-webkit-scrollbar {
     width: 10px;
     background: hsl(209, 23%, 22%);

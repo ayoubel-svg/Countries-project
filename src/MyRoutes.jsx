@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Routes, Route, Link } from "react-router-dom";
 import { FaRegMoon } from "react-icons/fa";
-
 import App from "./componnent/App";
 import Country_info from "./componnent/Country_info";
 import Error from "./componnent/Error";
@@ -15,7 +14,9 @@ export default function MyRoutes() {
           color: dark ? "white" : "black",
         }}
       >
-        <h3>Where in the world</h3>
+        <Link to="/" style={{ color: dark ? "#fff" : "#000" }}>
+          <h3>Where in the world</h3>
+        </Link>
         <span
           className="darkMode"
           onClick={() => {
